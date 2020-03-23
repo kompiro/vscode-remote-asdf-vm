@@ -1,6 +1,6 @@
 {
   "name": "asdf-vm env",
-  "image": "kompiro:devenv"
+  "image": "kompiro/devenv:latest",
   //"dockerFile": "Dockerfile",
 
   // Use 'appPort' to create a container with published ports. If the port isn't working, be sure

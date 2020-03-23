@@ -74,7 +74,7 @@ ENV HOME=/home/$USERNAME \
 
 RUN echo '\n. /opt/asdf/asdf.sh' >> ~/.bashrc \
   && echo '\n. /opt/asdf/completions/asdf.bash' >> ~/.bashrc \
-  && echo 'legacy_version_file = true' >> ~/.asdfrc
+  && echo 'legacy_version_file = yes' >> ~/.asdfrc
 
 VOLUME ["${ASDF_DATA_DIR}"]
 
