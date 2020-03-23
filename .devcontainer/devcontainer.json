@@ -10,7 +10,7 @@
   // Comment out the next line to run as root instead.
   "remoteUser": "dev",
 
-  // Use 'settings' to set *default* container specific settings.json values on container create. 
+  // Use 'settings' to set *default* container specific settings.json values on container create.
   // You can edit these settings after create using File > Preferences > Settings > Remote.
   "settings": {
       "terminal.integrated.shell.linux": "/bin/bash"
@@ -23,6 +23,11 @@
 
   // Add the IDs of extensions you want installed when the container is created in the array below.
   "extensions": [
-      "dbaeumer.vscode-eslint"
+      "dbaeumer.vscode-eslint",
+      "pkief.material-icon-theme",
+      "rebornix.ruby",
+      "ms-vscode.go",
+      "eamodio.gitlens",
+      "mechatroner.rainbow-csv"
   ]
 }
