@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "APT::Install-Recommends 0;" >> /etc/apt/apt.conf.d/01norecommends \
   && echo "APT::Install-Suggests 0;" >> /etc/apt/apt.conf.d/01norecommends \
   && apt update \
-  && apt upgrade \
+  && apt upgrade -y \
   && apt install -y \
     apt-utils \
     dialog \
@@ -47,7 +47,9 @@ RUN echo "APT::Install-Recommends 0;" >> /etc/apt/apt.conf.d/01norecommends \
       /home/$USERNAME/.vscode-server-insiders/extensions \
   && chown -R $USERNAME \
       /home/$USERNAME/.vscode-server \
-      /home/$USERNAME/.vscode-server-insiders
+      /home/$USERNAME/.vscode-server-insiders \
+  && mkdir -p /workspace \
+  && chown -R $USERNAME /workspace
 
 ENV DEBIAN_FRONTEND=dialog
 
